@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Moses Otieno</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            overflow: hidden; /* Hide overflow content outside the body */
+            background: linear-gradient(45deg, #ff9900, #ff00ff, #00ff00, #00ffff, #ff0066, #33ccff, #ffcc00); /* Gradient background */
+            background-size: 400% 400%; /* For the gradient animation */
+            animation: rotatingCD 10s linear infinite; /* Animation properties */
+      
+        }
+        @keyframes rotatingCD {
+            0% {
+                transform: rotate(0deg);
+                background: linear-gradient(45deg, #ff9900, #ff00ff, #00ff00, #00ffff, #ff0066, #33ccff, #ffcc00);
+            }
+            25% {
+                background: linear-gradient(45deg, #ffcc00, #ff0066, #33ccff, #ffcc00, #ff9900, #00ff00, #00ffff);
+            }
+            50% {
+                background: linear-gradient(45deg, #00ff00, #00ffff, #ff9900, #ff00ff, #33ccff, #ffcc00, #ff0066);
+            }
+            75% {
+                background: linear-gradient(45deg, #ff0066, #33ccff, #ffcc00, #ff0066, #00ff00, #00ffff, #ff9900);
+            }
+            100% {
+                background: linear-gradient(45deg, #ff9900, #ff00ff, #00ff00, #00ffff, #ff0066, #33ccff, #ffcc00);
+            }
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .button {
+            background-color: #25d366; /* WhatsApp green */
+            color: #fff;
+            font-size: 20px;
+            border: none;
+            padding: 15px 30px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            animation: backgroundAnimation 5s linear infinite alternate;
+            animation: changingColor 3s linear infinite; /* Change button color */
+        
+        }
+        @keyframes changingColor {
+            0% {
+                background-color: #ffcc00; /* Bright yellow color */
+            }
+            25% {
+                background-color: #ff0066; /* Pink color */
+            }
+            50% {
+                background-color: #33ccff; /* Light blue color */
+            }
+            75% {
+                background-color: #00ff00; /* Bright green color */
+            }
+            100% {
+                background-color: #ffcc00; /* Repeat the color cycle */
+            }
+        }
+
+        .button:hover {
+            background-color: #128c7e; /* Darker shade of WhatsApp green */
+        }
+
+        @keyframes backgroundAnimation {
+            0% {
+                background-color: #25d366;
+            }
+            100% {
+                background-color: #128c7e;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a class="button" href="https://api.whatsapp.com/send?phone=254769933048" target="_blank">WhatsApp Moses Otieno</a>
+    </div>
+</body>
+</html>
